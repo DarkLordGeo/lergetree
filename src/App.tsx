@@ -1,7 +1,7 @@
 // import ProfileCard from "./component/ProfileCard"
 // import Me from '../me_bg_removed.png'
 import TiltedCard from "./component/TiltedCard"
-import MeBgBlue from '../me_bg_blue.png'
+// import MeBgBlue from '../me_bg_blue.png'
 import MeBordered from '../me_bg_outlined.png'
 import LogoLoop from "./component/LogoLoop";
 import { FaGithub, FaLinkedin, FaPython } from "react-icons/fa";
