@@ -7,16 +7,16 @@ import { FaGithub, FaLinkedin, FaPython } from "react-icons/fa";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiRedux, SiJavascript, SiReactquery, SiNetlify, SiGithub } from 'react-icons/si';
 import { FaAws, FaDocker, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router";
-import { useState } from "react";
+// import { useState } from "react";
 
 function App() {
 
-  const [number, setNumber] = useState(null)
+  // const [number, setNumber] = useState(null)
 
-  const copyNumber = () => {
-    const clipBoard = navigator.clipboard
-    clipBoard.writeText("598 60 90 70")
-  }
+  // const copyNumber = () => {
+  //   const clipBoard = navigator.clipboard
+  //   clipBoard.writeText("598 60 90 70")
+  // }
 
 
   const techLogos = [
