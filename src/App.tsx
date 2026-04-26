@@ -5,9 +5,19 @@ import MeBgBlue from '../me_bg_blue.png'
 import LogoLoop from "./component/LogoLoop";
 import { FaGithub, FaLinkedin, FaPython } from "react-icons/fa";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiRedux, SiJavascript, SiReactquery, SiNetlify, SiGithub } from 'react-icons/si';
-import { FaAws, FaDocker } from "react-icons/fa";
+import { FaAws, FaDocker, FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router";
+import { useState } from "react";
 
 function App() {
+
+  const [number, setNumber] = useState(null)
+
+  const copyNumber = () => {
+    const clipBoard = navigator.clipboard
+    clipBoard.writeText("598 60 90 70")
+  }
+
 
   const techLogos = [
     { node: <SiReact color="#ffff" />, title: "React", href: "https://react.dev" },
@@ -58,6 +68,7 @@ function App() {
               hoverSpeed={0}
               fadeOut={true}
               fadeOutColor="#000"
+
             />
           </div>
         </div>
@@ -65,14 +76,20 @@ function App() {
           <h1 className="text-2xl font-medium">Social tree</h1>
         </div>
         <div className="w-full flex items-center justify-center flex-col gap-4">
-          <div className="flex justify-center gap-2 items-center w-5/6 bg-[#232925] rounded-4xl py-6 px-2 cursor-pointer select-none shadow-2xl">
-            <FaGithub size={25} color="#F2F5F3" />
-            <p className="font-medium text-white">Github</p>
-          </div>
-          <div className="flex justify-center gap-2 items-center w-5/6 bg-[#00A0DC] rounded-4xl py-6 px-2 cursor-pointer select-none shadow-2xl">
+
+          <Link to={'https://www.linkedin.com/in/lasha-ergeshidze-6822ba2a5/'} className="flex justify-center gap-2 items-center w-5/6 bg-[#00A0DC] rounded-4xl py-6 px-2 cursor-pointer select-none shadow-2xl">
             <FaLinkedin size={25} color="#ffff" />
             <p className="font-medium text-white">Linkedin</p>
-          </div>
+          </Link>
+          <Link to={'https://github.com/DarkLordGeo/'} className="flex justify-center gap-2 items-center w-5/6 bg-[#232925] rounded-4xl py-6 px-2 cursor-pointer select-none shadow-2xl">
+            <FaGithub size={25} color="#F2F5F3" />
+            <p className="font-medium text-white">Github</p>
+          </Link>
+
+          <Link to={"https://wa.me/598609070"} className="flex justify-center gap-2 items-center w-5/6 bg-[#25d366] rounded-4xl py-6 px-2 cursor-pointer select-none shadow-2xl">
+            <FaWhatsapp size={25} color="#ffffff" />
+            <p className="font-medium text-white">Whatsapp</p>
+          </Link>
         </div>
       </div>
     </>
