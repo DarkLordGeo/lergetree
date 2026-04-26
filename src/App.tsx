@@ -33,12 +33,6 @@ function App() {
         <div className="mt-12">
           <TiltedCard
             imageSrc={MeBgBlue}
-            // altText="Lasha ergeshidze"
-            // captionText=""
-            // containerHeight="300px"
-            // containerWidth="300px"
-            // imageHeight="300px"
-            // imageWidth="300px"
             rotateAmplitude={12}
             scaleOnHover={1.05}
             showMobileWarning={false}
@@ -80,8 +74,6 @@ function App() {
             <p className="font-medium text-white">Linkedin</p>
           </div>
         </div>
-
-
       </div>
     </>
   )
