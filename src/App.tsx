@@ -1,11 +1,12 @@
-import ProfileCard from "./component/ProfileCard"
-import Me from '../me_bg_removed.png'
+// import ProfileCard from "./component/ProfileCard"
+// import Me from '../me_bg_removed.png'
 import TiltedCard from "./component/TiltedCard"
 import MeBgBlue from '../me_bg_blue.png'
 import LogoLoop from "./component/LogoLoop";
-import { FaGithub, FaPython } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaPython } from "react-icons/fa";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiRedux, SiJavascript, SiReactquery, SiNetlify, SiGithub } from 'react-icons/si';
 import { FaAws, FaDocker } from "react-icons/fa";
+
 function App() {
 
   const techLogos = [
@@ -69,10 +70,14 @@ function App() {
         <div className="w-full items-center justify-center text-center text-white py-12">
           <h1 className="text-2xl font-medium">Social tree</h1>
         </div>
-        <div className="w-full flex items-center justify-center flex-col">
-          <div className="flex justify-center gap-2 items-center w-5/6 bg-[#232925] rounded-4xl py-6 px-2 cursor-pointer select-none">
-            <FaGithub size={16} color="#ffff" />
+        <div className="w-full flex items-center justify-center flex-col gap-4">
+          <div className="flex justify-center gap-2 items-center w-5/6 bg-[#232925] rounded-4xl py-6 px-2 cursor-pointer select-none shadow-2xl">
+            <FaGithub size={25} color="#F2F5F3" />
             <p className="font-medium text-white">Github</p>
+          </div>
+          <div className="flex justify-center gap-2 items-center w-5/6 bg-[#00A0DC] rounded-4xl py-6 px-2 cursor-pointer select-none shadow-2xl">
+            <FaLinkedin size={25} color="#ffff" />
+            <p className="font-medium text-white">Linkedin</p>
           </div>
         </div>
 
