@@ -7,6 +7,7 @@ import { FaGithub, FaLinkedin, FaPython } from "react-icons/fa";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiRedux, SiJavascript, SiReactquery, SiNetlify, SiGithub } from 'react-icons/si';
 import { FaAws, FaDocker, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router";
+import GradualBlur from "./component/GradualBlur";
 // import { useState } from "react";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
       <div
         className="w-full flex items-center justify-center flex-col"
       >
+
         <div className="mt-12">
           <TiltedCard
             imageSrc={MeBgBlue}
@@ -56,7 +58,6 @@ function App() {
             }
           />
         </div>
-
         <div className="mt-12 w-full">
           <div >
             <LogoLoop
@@ -91,6 +92,7 @@ function App() {
             <p className="font-medium text-white">Whatsapp</p>
           </Link>
         </div>
+
       </div>
     </>
   )

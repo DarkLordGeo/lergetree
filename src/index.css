@@ -3,3 +3,9 @@
 body,html{
     background: #000;
 }
+
+
+
+@utility mask-to-t{
+    mask:  linear-gradient(to top, rgba(0,0,0,0),rbga(0,0,0,1) 100%)
+}
