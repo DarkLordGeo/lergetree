@@ -9,3 +9,12 @@ body,html{
 @utility mask-to-t{
     mask:  linear-gradient(to top, rgba(0,0,0,0),rbga(0,0,0,1) 100%)
 }
+@layer carousele{
+    .scrollbar::-webkit-scrollbar{
+        display: none;
+    }
+}
+@keyframes spin {
+    from{translate: 0;}
+    to{translate:-100%;}
+}

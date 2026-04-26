@@ -2,6 +2,7 @@
 // import Me from '../me_bg_removed.png'
 import TiltedCard from "./component/TiltedCard"
 import MeBgBlue from '../me_bg_blue.png'
+import MeBordered from '../me_bg_outlined.png'
 import LogoLoop from "./component/LogoLoop";
 import { FaGithub, FaLinkedin, FaPython } from "react-icons/fa";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiRedux, SiJavascript, SiReactquery, SiNetlify, SiGithub } from 'react-icons/si';
@@ -37,13 +38,11 @@ function App() {
 
   return (
     <>
-      <div
-        className="w-full flex items-center justify-center flex-col"
-      >
+      <div className="w-full flex items-center justify-center flex-col">
 
         <div className="mt-12">
           <TiltedCard
-            imageSrc={MeBgBlue}
+            imageSrc={MeBordered}
             rotateAmplitude={12}
             scaleOnHover={1.05}
             showMobileWarning={false}
@@ -57,9 +56,11 @@ function App() {
             }
           />
         </div>
+
         <div className="w-full items-center justify-center text-center text-white py-6">
           <h1 className="font-medium text-xl">Front end developer</h1>
         </div>
+
         <div className="py-8 w-full">
           <LogoLoop
             logos={techLogos}
@@ -72,9 +73,11 @@ function App() {
             fadeOutColor="#000"
           />
         </div>
+
         <div className="w-full items-center justify-center text-center text-white py-8">
           <h1 className="text-2xl font-medium">Social tree</h1>
         </div>
+
         <div className="w-full flex items-center justify-center flex-col gap-4 mb-12">
           <Link to={'https://www.linkedin.com/in/lasha-ergeshidze-6822ba2a5/'} className="flex justify-center gap-2 items-center w-5/6 bg-[#00A0DC] rounded-4xl py-6 px-2 cursor-pointer select-none shadow-2xl">
             <FaLinkedin size={25} color="#ffff" />
@@ -90,6 +93,7 @@ function App() {
             <p className="font-medium text-white">Whatsapp</p>
           </Link>
         </div>
+
       </div>
     </>
   )
