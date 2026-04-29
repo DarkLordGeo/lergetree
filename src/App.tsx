@@ -4,7 +4,7 @@ import TiltedCard from "./component/TiltedCard"
 // import MeBgBlue from '../me_bg_blue.png'
 import MeBordered from '../me_bg_outlined.png'
 import LogoLoop from "./component/LogoLoop";
-import { FaGithub, FaLinkedin, FaPython } from "react-icons/fa";
+import { FaFilePdf, FaGithub, FaLinkedin, FaPython } from "react-icons/fa";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiRedux, SiJavascript, SiReactquery, SiNetlify, SiGithub } from 'react-icons/si';
 import { FaAws, FaDocker, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router";
@@ -33,7 +33,6 @@ function App() {
     { node: <FaAws color="#ffff" />, title: "AWS", href: "https://aws.com" },
     { node: <FaDocker color="#ffff" />, title: "Docker", href: "https://docker.com" },
     { node: <SiJavascript color="#ffff" />, title: "Javascript", href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-
   ]
 
   return (
@@ -92,6 +91,10 @@ function App() {
             <FaWhatsapp size={25} color="#ffffff" />
             <p className="font-medium text-white">Whatsapp</p>
           </Link>
+          <a className="flex justify-center gap-2 items-center w-5/6 bg-[#910000] rounded-4xl py-6 px-2 cursor-pointer select-none shadow-2xl" href="_blank" download={''}>
+            <FaFilePdf size={25} color="#ffffff" />
+            <p className="font-medium text-white">Resume</p>
+          </a>
         </div>
 
       </div>
