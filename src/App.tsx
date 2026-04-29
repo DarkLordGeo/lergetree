@@ -8,6 +8,7 @@ import { FaFilePdf, FaGithub, FaLinkedin, FaPython } from "react-icons/fa";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiRedux, SiJavascript, SiReactquery, SiNetlify, SiGithub } from 'react-icons/si';
 import { FaAws, FaDocker, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router";
+import Resume from "../lasha ergeshidze.pdf"
 // import { useState } from "react";
 
 function App() {
@@ -91,7 +92,7 @@ function App() {
             <FaWhatsapp size={25} color="#ffffff" />
             <p className="font-medium text-white">Whatsapp</p>
           </Link>
-          <a className="flex justify-center gap-2 items-center w-5/6 bg-[#910000] rounded-4xl py-6 px-2 cursor-pointer select-none shadow-2xl" href="_blank" download={''}>
+          <a className="flex justify-center gap-2 items-center w-5/6 bg-[#910000] rounded-4xl py-6 px-2 cursor-pointer select-none shadow-2xl" href="_blank" download={Resume}>
             <FaFilePdf size={25} color="#ffffff" />
             <p className="font-medium text-white">Resume</p>
           </a>
